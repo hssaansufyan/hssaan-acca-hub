@@ -863,12 +863,12 @@ function toggleOption(btn,i,isMulti,c){
     if(answered)return;
     if(isMulti){
         const idx=selectedOptions.indexOf(i);
-        if(idx>-1){selectedOptions.splice(idx,1);btn.style.background='#f8faff';btn.style.borderColor='#e2e8f0'}
+        if(idx>-1){selectedOptions.splice(idx,1);btn.style.background:'#1e293b';btn.style.borderColor='#e2e8f0'}
         else if(selectedOptions.length<2){selectedOptions.push(i);btn.style.background='#1e3a8a';btn.style.borderColor='#6c63ff'}
     }else{
         selectedOptions=[i];
-        c.querySelectorAll('.option-btn').forEach(b=>{b.style.background='#f8faff';b.style.borderColor='#e2e8f0'});
-        btn.style.background='#eef2ff';btn.style.borderColor='#6c63ff';
+        c.querySelectorAll('.option-btn').forEach(b=>{b.style.background='#334155';b.style.borderColor='#e2e8f0'});
+        btn.style.background='#1e3a8a';btn.style.borderColor='#6c63ff';
     }
 }
 
